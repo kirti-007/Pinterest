@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const plm = require('passport-local-mongoose')
 
-mongoose.connect('mongodb://127.0.0.1:27017/pintrestdb');
+mongoose.connect("mongodb+srv://kirtimahapatra07:kirti0702@db.9ifn4pv.mongodb.net/?retryWrites=true&w=majority&appName=db");
 const userSchema = new mongoose.Schema({
   username: {
     type: String,
@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema({
     ref: 'Post',
   }],
   dp: {
-    type: String, // Assuming you store the URL or path to the display picture
+    type: String, 
   },
   email:{
     type: String,
