@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://kirtimahapatra07:kirti0702@db.9ifn4pv.mongodb.net/?retryWrites=true&w=majority&appName=db");
 
 const postSchema = new mongoose.Schema({
   posttext: {

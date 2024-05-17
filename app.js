@@ -10,6 +10,11 @@ var usersRouter = require('./routes/users');
 const passport = require('passport');
 const flash = require('connect-flash')
 
+const mongoose = require('mongoose');
+mongoose.connect("mongodb+srv://admin:admin@db.9ifn4pv.mongodb.net/?retryWrites=true&w=majority&appName=db").then(() => {
+  console.log("Connected to db");
+});
+
 var app = express();
 
 // view engine setup
